@@ -35,6 +35,18 @@ class ViewController: UITableViewController {
         cell.textLabel?.text = pictures[indexPath.row]
         return cell
     }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        // 1: try loading the detail view controller and typecasting it
+        if let vc = storyboard?.instantiateViewController(withIdentifier: "Detail") as? DetailViewController {
+            // 2: yay! set its selectedImage property
+            vc.selectedImage = pictures[indexPath.row]
+            
+            // 3: now push it onto the nav controller
+            navigationController?.pushViewController(vc, animated: true)
+        }
+    }
+
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
