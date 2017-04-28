@@ -55,7 +55,7 @@
                         <viewControllerLayoutGuide type="top" id="iBr-Cb-7jt"/>
                         <viewControllerLayoutGuide type="bottom" id="gOh-6X-Gku"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="1Vo-Q3-f5s">
+                    <view key="view" contentMode="scaleAspectFit" id="1Vo-Q3-f5s">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
