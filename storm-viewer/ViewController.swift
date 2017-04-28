@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UITableViewController {
 
     var pictures = [String]()
     
@@ -21,7 +21,7 @@ class ViewController: UIViewController {
         
         for item in items {
             if item.hasPrefix("nssl") {
-                // this is a picture to load!
+                pictures.append(item)
             }
         }
     }
