@@ -47,6 +47,38 @@
             </objects>
             <point key="canvasLocation" x="770.39999999999998" y="110.19490254872565"/>
         </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="K5O-9z-i74">
+            <objects>
+                <viewController storyboardIdentifier="Detail" id="Q2N-dT-CKG" customClass="DetailViewController" customModule="storm_viewer" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="iBr-Cb-7jt"/>
+                        <viewControllerLayoutGuide type="bottom" id="gOh-6X-Gku"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1Vo-Q3-f5s">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SJe-RU-Ojo">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="SJe-RU-Ojo" firstAttribute="top" secondItem="1Vo-Q3-f5s" secondAttribute="top" id="AXI-G4-UaG"/>
+                            <constraint firstItem="SJe-RU-Ojo" firstAttribute="bottom" secondItem="gOh-6X-Gku" secondAttribute="top" id="ESV-l3-VxH"/>
+                            <constraint firstItem="SJe-RU-Ojo" firstAttribute="leading" secondItem="1Vo-Q3-f5s" secondAttribute="leading" id="RxE-v7-aey"/>
+                            <constraint firstAttribute="trailing" secondItem="SJe-RU-Ojo" secondAttribute="trailing" id="sdh-da-lyy"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="SJe-RU-Ojo" id="dzm-FS-m9M"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jwy-qZ-1VB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1558" y="110"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="iIu-lQ-3dD">
             <objects>
